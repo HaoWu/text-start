@@ -1,0 +1,25 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%opening
+\title{Create your own command}
+\author{Hao}
+\newcommand{\TUG}{\textsc{\TeX\ Users Group}}
+\newcommand{\keyword}[1]{\textbf{#1}}
+\newcommand{\keywordWithFont}[2][\bfseries]{{#1#2}}
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{The \TUG}
+The \TUG\ is an organization for people who are interested in \TeX\ or \LaTeX .
+
+\section{Using \textbackslash keyword}
+\keyword{Class} and \keyword{Package} are two of the keywords in Java.
+\keywordWithFont[\itshape]{public}, \keywordWithFont[\slshape]{private} and \keywordWithFont{protected} 
+are also some of the keywords.
+\end{document}
