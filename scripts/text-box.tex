@@ -1,0 +1,26 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%opening
+\title{Creating a narrow text column}
+\author{Hao}
+
+\begin{document}
+
+\maketitle
+
+\parbox{3cm}{TUG is an acrynom. It means \TeX\ Users Group.}
+
+
+% \quad is used to produce some spaces.
+Text line. 
+\quad\quad\quad\quad\parbox[b]{1.8cm}{this parbox is aligned at its bottom line}
+\quad\parbox{1.5cm}{center-aligned parbox}
+\quad\parbox[t]{2cm}{another parbox aligned at its top line}
+
+Text line.
+\parbox[c][5cm][b]{3cm}{set the hight of text box} % lay the text at bottom of box
+\parbox[c][5cm][c]{3cm}{set the hight of text box} % center of box
+\parbox[c][5cm][t]{3cm}{set the hight of text box} % top of box
+\parbox[c][5cm][s]{3cm}{set the hight of text box} % stretch the text vertically if possible
+\end{document}
