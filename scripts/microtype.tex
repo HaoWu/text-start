@@ -1,0 +1,16 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+%opening
+\title{Use microtype for hyphenation}
+\author{Hao}
+
+\begin{document}
+
+\maketitle
+\parbox{3cm}{TUG is an acronym. It means \TeX\ Users Group.}
+% microtype doesnot work for typewriter font
+\quad
+\parbox{3cm}{\texttt{TUG is an acronym. It means \TeX\ Users Group.}}
+
+\end{document}

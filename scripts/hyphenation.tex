@@ -1,0 +1,23 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+% prevent hyphenation throughout document
+%\usepackage[none]{hyphenat}  
+
+\usepackage[htt]{hyphenat} % hyphenat typewriter font
+
+%opening
+\title{Hyphenation usage}
+\author{Hao}
+\hyphenation{acro-nym ac-ro-nym}
+\begin{document}
+
+\maketitle
+\parbox{3cm}{TUG is an acronym. It means \TeX\ Users Group.}
+%prevent hyphenation
+\quad
+\parbox{3cm}{TUG is an \mbox{acronym}. It means \TeX\ Users Group.}
+\quad
+\parbox{3cm}{\texttt{TUG is an acronym. It means \TeX\ Users Group.}}
+
+\end{document}
